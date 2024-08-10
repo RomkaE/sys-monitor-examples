@@ -1,0 +1,13 @@
+
+SMON_DIR_PATH := ../../components/sys-monitor
+
+COMPONENT_ADD_INCLUDEDIRS := ${SMON_DIR_PATH}/src/
+
+COMPONENT_PRIV_INCLUDEDIRS := ../config
+COMPONENT_PRIV_INCLUDEDIRS += ${SMON_DIR_PATH}/src/port/inc
+ 
+COMPONENT_SRCDIRS := ${SMON_DIR_PATH}/src
+COMPONENT_SRCDIRS += ${SMON_DIR_PATH}/src/port/ESP8266
+
+CPPFLAGS += -Wno-format
+#${SMON_DIR_PATH}/src/smonitor.o: CFLAGS += -Wno-format

@@ -1,3 +1,3 @@
-[submodule "components/sys-mon-component/sys-monitor"]
-	path = components/sys-mon-component/sys-monitor
+[submodule "components/sys-monitor"]
+	path = components/sys-monitor
 	url = git@github.com:RomkaE/sys-monitor.git
