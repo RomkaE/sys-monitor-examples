@@ -3,6 +3,10 @@
 #define SYS_MONITOR_CONFIG_H_
 
 #include "sdkconfig.h"
+#include "esp_system.h"
+
+#define xPortGetFreeHeapSize() esp_get_free_heap_size()
+#define xPortGetMinimumEverFreeHeapSize() esp_get_minimum_free_heap_size()
 
 #define SYS_MONITOR_BUFF_SIZE               ( 1024 )
 #define SYS_MONITOR_UPDATE_PERIOD_SEC       1
