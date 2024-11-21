@@ -5,14 +5,16 @@
 #include "sdkconfig.h"
 #include "esp_system.h"
 
-#define xPortGetFreeHeapSize() esp_get_free_heap_size()
-#define xPortGetMinimumEverFreeHeapSize() esp_get_minimum_free_heap_size()
+#define xPortGetFreeHeapSize()              esp_get_free_heap_size()
+#define xPortGetMinimumEverFreeHeapSize()   esp_get_minimum_free_heap_size()
 
 #define SYS_MONITOR_BUFF_SIZE               ( 1024 )
 #define SYS_MONITOR_UPDATE_PERIOD_SEC       1
 #define SYS_MONITOR_USE_FLOAT               1
 #define SYS_MONITOR_VIEW_RTOS_TIME          1
 #define SYS_MONITOR_VIEW_DEBUG_INFO         1
+
+#define SYS_MONITOR_UART_NUM                ( UART_NUM_1 )
 
 #if CONFIG_FREERTOS_RUN_TIME_STATS_USING_CPU_CLK
   #if CONFIG_ESP8266_DEFAULT_CPU_FREQ_80
